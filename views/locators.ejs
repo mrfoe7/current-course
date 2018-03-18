@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div id="locators-tbl">
+    <table>
+      <thead>
+        <tr>
+          <th>Номер заказа</th>
+          <th>Локатор</th>
+          <th>Фамилия</th>
+          <th>Имя</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0; i<rows.length; i++) {%>
+          <td><%=row%></td>
+          <td><%=rows[i].order_id %></td>
+          <td><%=rows[i].locator %></td>
+          <td><%=rows[i].name_second %></td>
+          <td><%=rows[i].name_first %></td>
+        <%} %>
+      </tbody>
+    </table>
+    <br>
+    <button type="button" name="back"><a href="/orders">Назад</a></button>
+  </div>
+</div>

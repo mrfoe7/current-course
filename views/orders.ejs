@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <div id="orders-tbl">
+    <table>
+      <thead>
+        <tr>
+          <th>Номер заказа</th>
+          <th><a href="/orders/locators">Локатор</a></th>
+          <th>Дата последнего обновления</th>
+          <th>Стоимость в рублях</th>
+          <th>Стоимость в валюте заказа</th>
+          <th>Количество пассажиров</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>asdasd</td>
+        <% for(var i=0; i<rows.length; i++) { %>
+          <td><%=rows[i].id %></td>
+          <td><%=rows[i].locator %></td>
+          <td><%=rows[i].date_insert %></td>
+          <td><%=rows[i].price %></td>
+          <td><%=rows[i].amount %></td>
+        <%} %>
+      </tbody>
+    </table>
+  </div>
+</div>
