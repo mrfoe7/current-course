@@ -1,0 +1,22 @@
+{
+  "name": "current-course",
+  "version": "1.0.0",
+  "description": "service for get currnet course from CB RF",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "author": "Saimon Shaplygin",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.3",
+    "mysql": "^2.15.0",
+    "nconf": "^0.10.0"
+  }
+}
