@@ -8,7 +8,9 @@
   },
   "keywords": [
     "nodejs",
-    "express"
+    "express",
+    "mysql",
+    "ejs"
   ],
   "author": "Saimon Shaplygin",
   "license": "MIT",
@@ -16,6 +18,7 @@
     "body-parser": "^1.18.2",
     "ejs": "^2.5.7",
     "express": "^4.16.3",
+    "express-ejs-layouts": "^2.3.1",
     "mysql": "^2.15.0",
     "nconf": "^0.10.0"
   }
