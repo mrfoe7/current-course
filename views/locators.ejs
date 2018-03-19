@@ -11,11 +11,12 @@
       </thead>
       <tbody>
         <% for(var i=0; i<rows.length; i++) {%>
-          <td><%=row%></td>
-          <td><%=rows[i].order_id %></td>
-          <td><%=rows[i].locator %></td>
-          <td><%=rows[i].name_second %></td>
-          <td><%=rows[i].name_first %></td>
+          <tr>
+            <td><%=rows[i].order_id %></td>
+            <td><%=rows[i].locator %></td>
+            <td><%=rows[i].name_second %></td>
+            <td><%=rows[i].name_first %></td>
+          </tr>
         <%} %>
       </tbody>
     </table>
