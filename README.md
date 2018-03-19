@@ -24,3 +24,6 @@ npm start
 * body-parser
 * mysql
 * ejs
+* morgan
+* nconf
+* winston
