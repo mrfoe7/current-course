@@ -1,9 +1,19 @@
 current-course
 =======================
 
-Test task. Service for get currnet course from CB RF.
+## Menu
+
+- [Descriptions](#Descriptions)
+- [Presetup](#Presetup)
+- [Technologies](#Technologies)
+- [Usage](#Usage)
+- [Dependencies](#Dependencies)
+
+## Descriptions
+Test task project. Service for get currnet course from CB RF.
 If you want read task, please open resource/task.txt
 Dump data bases in resource/order.sql
+
 
 ## Presetup
 
@@ -17,6 +27,13 @@ cd current-course
 npm install
 npm start
 ```
+
+# Tecnologies
+
+* node.js
+* express
+* mysql
+
 
 ## Dependencies
 
