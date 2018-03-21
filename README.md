@@ -1,6 +1,11 @@
 current-course
 =======================
 
+## Descriptions
+Test task project. Service for get currnet course from CB RF.
+If you want read task, please open resource/task.txt
+Dump data bases in resource/order.sql
+
 ## Menu
 
 - [Descriptions](#Descriptions)
@@ -8,12 +13,6 @@ current-course
 - [Technologies](#Technologies)
 - [Usage](#Usage)
 - [Dependencies](#Dependencies)
-
-## Descriptions
-Test task project. Service for get currnet course from CB RF.
-If you want read task, please open resource/task.txt
-Dump data bases in resource/order.sql
-
 
 ## Presetup
 

@@ -4,7 +4,7 @@
   "description": "service for get currnet course from CB RF",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "set NODE_ENV=development & supervisor server.js -i node_modules"
   },
   "keywords": [
     "nodejs",
@@ -22,6 +22,7 @@
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "nconf": "^0.10.0",
+    "soap": "^0.23.0",
     "winston": "^2.4.1"
   }
 }

@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
+// const log = require('./libs/log')(module);
 
 const index = require('./routers/index');
 const orders = require('./routers/orders');
@@ -26,6 +27,7 @@ app.use('/orders', orders);
 
 app.use(require('./middleware/notFound'));
 app.use(require('./middleware/error'));
+
 
 const server = http.createServer(app);
 server.listen(app.get('port'), ()=>{
