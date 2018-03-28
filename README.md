@@ -6,19 +6,19 @@ Test task project. Service for get currnet course from CB RF.
 If you want read task, please open resource/task.txt
 Dump data bases in resource/order.sql
 
-## Menu
+# Menu
 
-- [Descriptions](#Descriptions)
-- [Presetup](#Presetup)
-- [Technologies](#Technologies)
-- [Usage](#Usage)
-- [Dependencies](#Dependencies)
+- [Descriptions](# Descriptions)
+- [Presetup](# Presetup)
+- [Technologies](# Technologies)
+- [Usage](# Usage)
+- [Dependencies](# Dependencies)
 
-## Presetup
+# Presetup
 
 If you will usage this apps. You will corrected file config/config.json with mysql params
 
-## Usage
+# Usage
 
 ```
 git clone https://github.com/mrfoe7/current-course.git
@@ -32,9 +32,10 @@ npm start
 * node.js
 * express
 * mysql
+* docker
 
 
-## Dependencies
+# Dependencies
 
 * express
 * body-parser
