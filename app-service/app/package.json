@@ -10,6 +10,7 @@
     "nodejs",
     "express",
     "mysql",
+    "docker",
     "ejs"
   ],
   "author": "Saimon Shaplygin",

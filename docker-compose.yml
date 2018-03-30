@@ -3,8 +3,10 @@ services:
   webapp:
     build: ./app-service
     ports:
-      - 8080:8080
+      - "8080:8080"
     depends_on:
       - db
+    volumes:
+      - ./app-service/app:/app-service/app
   db:
     build: ./database-service
