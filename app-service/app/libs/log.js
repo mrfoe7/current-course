@@ -1,45 +1,47 @@
 const winston = require('winston');
 const config = require('../config');
 
-var ENV = process.env.NODE_ENV;
+let ENV = process.env.NODE_ENV;
+let charOS = (process.platform === 'win32') ? '\\' : '/';
+
 
 function getLogger(module) {
-
-  var path = module.filename.split('/').slice(-2).join('/');
-  // winston.add(winston.transports.File, { filename: 'somefile.log' });
-  return new winston.createLogger({
+  let path = module.filename.split(charOS).slice(-2).join(charOS);
+  let date = new Date();
+  date = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}:${date.getMilliseconds()}`;
+  return new winston.Logger({
     transports: [
       new winston.transports.Console({
         name: 'cosnsole',
         colorize: true,
         level: (ENV == 'development') ? 'debug' : 'error',
-        label: path
-        // timestamp: () => {
-        //   return Date.now();
-        // },
+        label: path,
+        timestamp: () => {
+          return date;
+        }
+      }),
+      new winston.transports.File({
+        name: 'info-file',
+        filename: './logs/info.log',
+        colorize: true,
+        level: 'silly',
+        label: path,
+        timestamp: () => {
+          return date;
+        },
+        options: {flags: 'a+'}
+      }),
+      new winston.transports.File({
+        name: 'error-file',
+        filename: './logs/error.log',
+        colorize: true,
+        level: 'error',
+        label: path,
+        timestamp: () => {
+          return date;
+        },
+        options: {flags: 'a+'}
       })
-      // new winston.transports.File({
-      //   name: 'info-file',
-      //   filename: 'filelog-info.log',
-      //   colorize: true,
-      //   level: 'log',
-      //   label: path,
-      //   timestamp: () => {
-      //     let date = new Date();
-      //     return date.getUTCString();
-      //   },
-      // }),
-      // new winston.transports.File({
-      //   name: 'error-file',
-      //   filename: 'filelog-error.log',
-      //   colorize: true,
-      //   level: 'error',
-      //   label: path,
-      //   timestamp: () => {
-      //     let date = new Date();
-      //     return date.getUTCString();
-      //   },
-      // })
     ]
   });
 }
