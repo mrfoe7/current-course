@@ -1,4 +1,4 @@
-current-course
+current-course [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mrfoe7/current-course/blob/master/LICENSE.md)
 =======================
 
 ## Descriptions
@@ -8,18 +8,19 @@ Dump data bases in resource/order.sql
 
 # Menu
 
-- [Descriptions](# Descriptions)
-- [Presetup](# Presetup)
-- [Technologies](# Technologies)
-- [Usage](# Usage)
-- [Dependencies](# Dependencies)
+* **[Descriptions](#descriptions)**
+* **[Presetup](#presetup)**
+* **[Technologies](#technologies)**
+* **[Usage](#usage)**
+* **[Dependencies](#dependencies)**
 
-# Presetup
+## Presetup
 
-If you will usage this apps. You will corrected file config/config.json with mysql params
+If you will usage this apps. You will corrected file config/config.json with mysql params and unpackage sql dump.
 
-# Usage
+## Usage
 
+If you can't use docker, you can use this manual
 ```
 git clone https://github.com/mrfoe7/current-course.git
 cd current-course
@@ -27,7 +28,14 @@ npm install
 npm start
 ```
 
-# Tecnologies
+Docker-compose
+
+```
+
+```
+
+
+## Tecnologies
 
 * node.js
 * express
@@ -35,7 +43,7 @@ npm start
 * docker
 
 
-# Dependencies
+## Dependencies
 
 * express
 * body-parser
