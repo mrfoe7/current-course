@@ -1,14 +1,12 @@
-current-course [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mrfoe7/current-course/blob/master/LICENSE.md)
-=======================
+## current-course [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mrfoe7/current-course/blob/master/LICENSE.md)
 
-## Descriptions
 Test task project. Service for get currnet course from CB RF.
 If you want read task, please open resource/task.txt
 Dump data bases in resource/order.sql
 
 # Menu
 
-* **[Descriptions](#descriptions)**
+* **[Descriptions](#current-course )**
 * **[Presetup](#presetup)**
 * **[Technologies](#technologies)**
 * **[Usage](#usage)**
