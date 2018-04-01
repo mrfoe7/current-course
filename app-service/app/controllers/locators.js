@@ -1,5 +1,6 @@
 const db = require('../libs/db');
 const config = require('../config');
+const logger = require('../libs/log')(module);
 
 async function getLocators(){
   try {
@@ -10,7 +11,8 @@ async function getLocators(){
     await db.closeDB(conn);
     return rows;
   } catch (err) {
-
+    logger.error(err);
+    throw err;
   }
 }
 
@@ -22,6 +24,7 @@ module.exports = (req, res)=>{
     for (let index in rows){
         mass.push(rows[index]);
     }
+    logger.info(`Sending data to /orders/locators to user`);
     res.render('locators', { title: "Список пассажиров", rows: mass});
   });
 };
