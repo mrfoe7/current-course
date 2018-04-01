@@ -4,7 +4,7 @@
   "description": "service for get currnet course from CB RF",
   "main": "server.js",
   "scripts": {
-    "dev": "set NODE_ENV=development & supervisor server.js -i node_modules"
+    "dev": "set NODE_ENV=development& supervisor server.js"
   },
   "keywords": [
     "nodejs",
@@ -20,6 +20,7 @@
     "ejs": "^2.5.7",
     "express": "^4.16.3",
     "express-ejs-layouts": "^2.3.1",
+    "memcached": "^2.2.2",
     "morgan": "^1.9.0",
     "mysql": "^2.15.0",
     "nconf": "^0.10.0",
