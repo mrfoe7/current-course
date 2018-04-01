@@ -23,7 +23,6 @@ function getLogger(module) {
       new winston.transports.File({
         name: 'info-file',
         filename: './logs/info.log',
-        colorize: true,
         level: 'silly',
         label: path,
         timestamp: () => {
@@ -34,7 +33,6 @@ function getLogger(module) {
       new winston.transports.File({
         name: 'error-file',
         filename: './logs/error.log',
-        colorize: true,
         level: 'error',
         label: path,
         timestamp: () => {
