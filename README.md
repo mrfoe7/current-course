@@ -1,15 +1,11 @@
-## current-course [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mrfoe7/current-course/blob/master/LICENSE.md)
-
-asdasdasdasdasdsa
-asdasdasdasdassdsa
+# current-course [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mrfoe7/current-course/blob/master/LICENSE.md)
 
 Test task project. Service for get currnet course from CB RF.
 If you want read task, please open resource/task.txt
 Dump data bases in resource/order.sql
 
-# Menu
+## Menu
 
-* **[Descriptions](#current-course )**
 * **[Presetup](#presetup)**
 * **[Technologies](#technologies)**
 * **[Usage](#usage)**
@@ -32,7 +28,7 @@ npm start
 Docker-compose
 
 ```
-
+docker-compose up -d
 ```
 
 
