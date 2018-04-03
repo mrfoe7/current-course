@@ -8,7 +8,10 @@
     "database":"test"
   },
   "memcached":{
-    "host":"",
-    "port":"" 
+    "host":"localhost",
+    "port":"11211",
+    "options":{
+      "algorithm": "md5"
+    }
   }
 }
