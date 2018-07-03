@@ -13,7 +13,7 @@ Dump data bases in resource/order.sql
 
 ## Presetup
 
-If you will usage this apps. You will corrected file *app-service/app/config/config.json* with mysql params and *unpackage sql dump*.
+If you will usage this apps. You will corrected file *app-service/app/config/config.json* with mysql params and *unpackage sql dump*. <br/>
 SQL dump located in *resource/orders.sql*
 
 ## Usage
