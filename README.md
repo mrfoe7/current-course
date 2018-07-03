@@ -13,19 +13,20 @@ Dump data bases in resource/order.sql
 
 ## Presetup
 
-If you will usage this apps. You will corrected file config/config.json with mysql params and unpackage sql dump.
+If you will usage this apps. You will corrected file *app-service/app/config/config.json* with mysql params and *unpackage sql dump*.
+SQL dump located in *resource/orders.sql*
 
 ## Usage
 
 If you can't use docker, you can use this manual
 ```
 git clone https://github.com/mrfoe7/current-course.git
-cd current-course
+cd current-course/app-service
 npm install
 npm start
 ```
 
-Docker-compose
+Docker-compose (don't working!!!)
 
 ```
 docker-compose up -d
